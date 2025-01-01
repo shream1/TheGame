@@ -68,7 +68,7 @@ namespace Pathfinding
             {
 
             }
-            if ((LPFP[0] >= this.transform.position.x - 0.61f&& LPFP[0] <= this.transform.position.x + 0.61f) && (LPFP[1] >= this.transform.position.y - 0.61f && LPFP[1] <= this.transform.position.y + 0.61f)) time += Time.deltaTime;
+            if ((LPFP[0] >= this.transform.position.x - 0.91f&& LPFP[0] <= this.transform.position.x + 0.91f) && (LPFP[1] >= this.transform.position.y - 0.91f && LPFP[1] <= this.transform.position.y + 0.91f)) time += Time.deltaTime;
             if (time > 2) { LPFP[0] = 4.98f; LPFP[1] = 2.93f; }
             if (target != null && ai != null) ai.destination = new Vector2(LPFP[0], LPFP[1]);
             print(LPFP[0] + " " + LPFP[1]);
